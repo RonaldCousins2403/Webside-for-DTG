@@ -1,172 +1,115 @@
-{h1
-font-size:30vw;
+ body{
+  background-color:silver;
+  text-align:center;
+  padding:20px;
+  
+}
+
+header{
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  background-color:purple;
+  border:double;
+  
+}
+body{
+  background-image: url(https://images.indianexpress.com/2020/07/US-chip.jpg);
+  display: table;
+    width:101.7%;
+    background: linear-gradient( rgba(1, 0, 5, 0.1), rgba(0, 0, 0.9, 0.4) ), url(https://images.indianexpress.com/2020/07/US-chip.jpg);
+    background-position:center;
+    height:101%;
+  background-repeat:no-repeat;
+  border:1px solid white;
+  margin:1;
+}
+#sign-in-reminder{
+  position:absolute;
+  right:300px;
+  top:-50px;
+  background-color:red;
+  border:solid black;
+  border-radius:5px;
+  width:200px;
+  animation:dropdown 20s infinite;
+  animation-direction:alternate;
+  animation-delay:6s;
+  padding:5px;
+  text-align:center;
+}
+
+@keyframes dropdown{
+    0%{
+       top:-50px;
+    }
+    50%{
+        top:20%;
+    }
+    100%{
+         top:20px;
+    }
 }
 body {
-  background:silver;
-  font:cursive;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-
-/*h1 {
-  background:;
-  font-size:45px;
-  color:green;
-  font:cursive;
-  
-  
-  
-  padding:10%;
-  border:5px :silver;``
-  margin:11%;
-  font:cursive;
-}
-
-h2 {
-  background:silver;
-  font-size:;
-  color:green;
-  font:cursive;
-  
-  
-  padding:;
-  border:;
-  margin:;
-  font:cursive;
-}
-
-img {
-  height:200px;
-  width:200px;
-  font:cursive;
-  
-  padding:10;
-  border:10;
-  margin:10;
-  font:cursive;
-}*/
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+.navbar {
   overflow: hidden;
-  background-color: red;
-  font:cursive;
+  background-color: #333;
 }
 
-li {
+.navbar a {
   float: left;
-  border-right:1px solid #bbb;
-  font:cursive;
-}
-
-li:last-child {
-  border-right: none;
-  font:cursive;
-}
-
-li a {
-  display: block;
+  font-size: 16px;
   color: white;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font:cursive;
 }
 
-li a:hover:not(.active) {
-  background-color:blue;
-  font:cursive;
-}
-
-.active {
-  background-color:black;
-  font:cursive;
-}
-#example1 {
-  box-shadow: 5px 10px;
-  font:cursive;
-}
-
-#example2 {
-  box-shadow: 5px 10px #888888;
-  font:cursive;
-}
-* {
-  box-sizing: border-box;
-  font:cursive;
-}
-
-/* Style the search field */
-form.example input[type=text] {
-  padding: 10px;
-  font-size: 17px;
-  border: 1px solid grey;
+.dropdown {
   float: left;
-  width: 80%;
-  background: #f1f1f1;
-  font:cursive;
+  overflow: hidden;
 }
 
-/* Style the submit button */
-form.example button {
-  float: left;
-  width: 20%;
-  padding: 10px;
-  background: #2196F3;
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
   color: white;
-  font-size: 17px;
-  border: 1px solid grey;
-  border-left: none; /* Prevent double borders */
-  cursor: pointer;
-  font:cursive;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
 }
 
-form.example button:hover {
-  background: #0b7dda;
-  font:cursive;
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
 }
 
-/* Clear floats */
-form.example::after {
-  content: "";
-  clear: both;
-  display: table;
-  font:cursive;
-}
-body{
-  background-image:linear-gradient(black,silver);
-}
-.container{
-  padding:5px;
-  display:flex;
-  flex-wrap:wrap;
-  justify-content:space-around;
-}
-.tile {
-  display:inline-block;
-  background-color:black;
-  height:140px;
-  width:140px;
-  margin:5px;
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
 }
 
-.tile:hover {
-  display:inline-block;
-  background-coulor:red balck;
-  height:146px;
-  width:146px;
-  margin:2px;
-}
-iframe {
-  width:inherit;
-  border:none;
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
 }
 
-var x = document.getElementById("demo");
-if (event.shiftKey) {
-  x.innerHTML = "The SHIFT key was pressed!";
-} else {
-  x.innerHTML = "The SHIFT key was NOT pressed!";
+.dropdown-content a:hover {
+  background-color: #ddd;
 }
 
+.dropdown:hover .dropdown-content {
+  display: block;
+}
