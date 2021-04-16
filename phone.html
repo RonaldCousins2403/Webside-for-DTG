@@ -1,0 +1,100 @@
+<html>
+  
+  <head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+     <script src="https://kit.fontawesome.com/4a415e237e.js" crossorigin="anonymous"></script>
+  </head>
+    <body>
+    <div id="flex-container">
+      <header>TECH NEWS STORE</header>
+    </div>
+    <div id="sign-in-reminder">
+      Sign Up Today
+    </div>
+     <div class="navbar">
+     <a href="home.html">Home</a>
+     <a href="news.html">News</a>
+     <div class="dropdown">
+      <button class="dropbtn">Dropdown 
+      <i class="fa fa-caret-down"></i>
+       </button>
+      <il class="dropdown-content">
+      <a href="pc.html"><i class="fas fa-desktop"></i>Prebuild PC</a>
+      <a href="phone.html">Phones<i class="fas fa-mobile"></i></a>
+      <a href="parts.html"><i class="fas fa-desktop"></i>PC Parts</a>
+       <a href="ps4.html"><i class="fas fa-headset"></i>PS4/5 console</a>
+        <a href="accessories.html"><i class="fas fa-headset"></i>PC Accessories</a>  
+    </div>
+     </style>
+</head>
+<body>
+<div class="dropdown">
+  <button class="dropbtn">All Sorts of phone</button>
+  <div class="dropdown-content">
+    <a href="samsung.html">Samsung</a>
+    <a href="apple.html">Apple</a>
+     <a href="haiwai.html">Huawei</a>
+    <a href="pixel.html">Google Pixel</a>
+  </div>
+</div>
+
+</body>
+</html>
+
+     <!DOCTYPE html>
+<html>
+<head>
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: inline;
+}
+</style>
+</head>
+<body>
+     <!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+.mySlides {display:none;}
+</style>
+<body>
+
+<div class="w3-container">
+  
+</div>
+
+<div class="w3-content w3-section" style="max-width:500px">
+  <img class="mySlides w3-animate-top" src="https://i.ytimg.com/vi/Zpb3-iUx1J0/maxresdefault.jpg" style="width:100%">
+  <img class="mySlides w3-animate-bottom" src="https://cdn.pocket-lint.com/r/s/1200x630/assets/images/145854-phones-news-buyer-s-guide-best-samsung-phones-galaxy-s-note-and-a-compared-image14-y3z4buu5re.jpg" style="width:100%">
+  <img class="mySlides w3-animate-top" src="https://www.family.my/files/2011/08/iphones.jpg" style="width:100%">
+  <img class="mySlides w3-animate-bottom" src="https://fdn.gsmarena.com/imgroot/news/20/03/huawei-p40-family-pic/-1220x526/gsmarena_000.jpg" style="width:100%">
+  <img class="mySlides w3-animate-top" src="https://d3fa68hw0m2vcc.cloudfront.net/dcd/238760213.jpeg" style="width:60%">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2500);    
+}
+</script>
+
+</body>
+</html>
